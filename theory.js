@@ -23,3 +23,18 @@ const  isAdmin = true // booalen
 let x //undefiend
 // null окремий тип даних
 console.log(typeof isAdmin)
+//console.log(typeof (1 / x))
+//console.log(typeof NaN)
+
+
+//====================Priority
+const fullAge = 29
+const birthYaer = 1993
+const currentYear = 2023
+// > < >/ </
+const isFullAge = currentYear - birthYaer >= fullAge
+//console.log(isFullAge)
+
+const num1 = 42
+const num2 = '42'
+console.log(num1 === num2)
