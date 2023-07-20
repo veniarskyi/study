@@ -73,24 +73,19 @@ function printResult(result) {
 function computeNumberWithAction(val1, val2, actionSymbol) {
     const num1 = Number(inp1.value)
     const num2 = Number(inp2.value)
-    if (actionSymbol == '+') {
-        num1 + num2
-    }
+    //if (actionSymbol == '+') {
+    //    num1 + num2
+    //     return num1 + num2
+    //}
 
-    if (actionSymbol == '-') {
-        num + num2
-    }
+    //if (actionSymbol == '-') {
+       // num + num2
+    //}
+    return actionSymbol == '+' ? num1 + num2 : num1 - num2
 }
 
 
 submitBtn.onclick = function () {
-    if (action == '+') {
-    const sum = Number(input1.value) + Number(input2.value)
-    printResult(sum)
-    
-
-    } else if (action == '-') {
-        const sum = Number(input1.value) - Number(input2.value)
-       printResult(sum)
-    }
+   const result = computeNumberWithAction(input1, input2, action)
+   printResult(result)
 }
